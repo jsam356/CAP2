@@ -536,7 +536,8 @@ for term in MajMeSHtoProj.keys():
     actual_diff=statistics.median(diff_distances)-statistics.median(group_distances)
     #After that we get the result of the aleatorization and compare with the median distribution.
     Randdiff=aleatorizationForTerms(distances,1000,ncol)
-    SignPos=int((len(Randdiff)*0.01))
+    SignPosLow=int((len(Randdiff)*0.01))
+    SignPosHigh=int((len(Randdiff)*0.99))
 #We compare the p-values of the first two tests (with bonferroni correction) and check the aleatorization. For the
 #aleatorization we check if the distances is smaller than the 1% percentile of the random median distance distribution.
     if b<0.01/(2*len(kwordtoProj)) and d<0.01/(2*len(kwordtoProj)) and (Randdiff[SignPosLow]>actual_diff or Randdiff[SignPosHigh]<actual_diff):
