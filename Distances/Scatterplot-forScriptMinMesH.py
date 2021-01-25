@@ -506,7 +506,7 @@ for term in MinMeSHtoProj.keys():
 #MeSH in terms of samples or bioprojects.
     if byProj==1:
         MinMeSHabundance.append(len(MinMeSHtoProj[term]))
-        if len(MajMeSHtoProj[term])<5:
+        if len(MinMeSHtoProj[term])<5:
             continue
         ncol,thisColMap,Wol=change_col(MinMeSHtoProj,[term],0)
     else:
@@ -538,7 +538,7 @@ for term in MinMeSHtoProj.keys():
     SignPosHigh=int((len(Randdiff)*0.99))
 #We compare the p-values of the first two tests (with bonferroni correction) and check the aleatorization. For the
 #aleatorization we check if the distances is smaller than the 1% percentile of the random median distance distribution.
-    if b<0.01/(2*len(kwordtoProj)) and d<0.01/(2*len(kwordtoProj)) and (Randdiff[SignPosLow]>actual_diff or Randdiff[SignPosHigh]<actual_diff):
+    if b<0.01/(2*len(MinMeSHtoProj)) and d<0.01/(2*len(MinMeSHtoProj)) (Randdiff[SignPosLow]>actual_diff or Randdiff[SignPosHigh]<actual_diff):
 #We print the terms which pass the criteria with their abundance.
         if Randdiff[SignPosLow]>actual_diff:
             where="low"
@@ -549,8 +549,8 @@ for term in MinMeSHtoProj.keys():
             print(term+"\t"+str(len(MinMeSHtoProj[term])))
         else:
             MinMeSHabSignificant.append(MinMeSHabundance[-1]) 
-            print(term+"\t"+str(MeSHabundance[-1]))
-        MinMeSHsignificant.append(term)               
+            print(term+"\t"+str(MinMeSHtoProj[-1]))
+        MinMeSHsignificant.append(term)                       
         output.write(term+"\n")
 
 output.close()   

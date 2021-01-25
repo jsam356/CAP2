@@ -540,7 +540,7 @@ for term in MajMeSHtoProj.keys():
     SignPosHigh=int((len(Randdiff)*0.99))
 #We compare the p-values of the first two tests (with bonferroni correction) and check the aleatorization. For the
 #aleatorization we check if the distances is smaller than the 1% percentile of the random median distance distribution.
-    if b<0.01/(2*len(kwordtoProj)) and d<0.01/(2*len(kwordtoProj)) and (Randdiff[SignPosLow]>actual_diff or Randdiff[SignPosHigh]<actual_diff):
+    if b<0.01/(2*len(MajMeSHtoProj)) and d<0.01/(2*len(MajMeSHtoProj)) and (Randdiff[SignPosLow]>actual_diff or Randdiff[SignPosHigh]<actual_diff):
 #We print the terms which pass the criteria with their abundance
         if Randdiff[SignPosLow]>actual_diff:
             where="low"
