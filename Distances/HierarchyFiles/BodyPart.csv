@@ -1,7 +1,7 @@
 ﻿Vaginal;vaginal microbiome samples;vaginal microbiota;vaginal microbiome;estrous cycle;genital nerve;female sexual dysfunction (fsd);posterior fornix of vagina;;vagina;;;;;;;;;
 Gut;gut metabolites;gut microbiome;gut metagenome;gut microbiota;mucin;butyrate;ileum;cecum;probiotics;inflammatory bowel disease;necrotizing enterocolitis (nec);cecum microbiota;gastrointestinal motility;intestinal inflammation;gut metabolites;intestinal microbiota;gastrointestinal tract;ceca
 Fecal;fecal samples;fecal sample;feces metagenome;feces;;;;;;;;;;;;;;
-Oral;salivary protein;labial glands;submandibular gland;oral samples;dental caries;caries;buccal mucosa;dorsum of tongue;gingiva;palatine tonsil;portion of saliva;;;;;;;
+Oral;oral samples;buccal mucosa;;;;;;;;;;;;;;;;
 Skin;skin microbiome;forehead;;;;;;;;;;;;;;;;
 Root;root metagenome;root-zone microbial communities;lateral roots;root endosphere;spruce roots microbial communities;;root nodule microbial communities;lateral roots;;;;;;;;;;
 Rhizosphere;endophytes;mycorrhiza;rhizosphere;rhizosphere metagenome;spruce rhizosphere microbial communities;;rhizosphere microbial communities;;arbuscular mycorrhizal soil;ectomycorrhizal soil;;;;;;;;
@@ -20,3 +20,9 @@ Ear;left retroauricular crease;right retroauricular crease;;;;;;;;;;;;;;;;
 Elbow Pit;right cubital fossa;;;;;;;;;;;;;;;;;
 Throat;throat;;;;;;;;;;;;;;;;;
 Palm;palm_left;palm_right;;;;;;;;;;;;;;;;
+Oral-Saliva;salivary protein;portion of saliva;;;;;;;;;;;;;;;;
+Oral-Tonsil;palatine tonsil;;;;;;;;;;;;;;;;;
+Oral-Gingival;gingiva;;;;;;;;;;;;;;;;;
+Oral-Salivary Glands;labial glands;submandibular gland;;;;;;;;;;;;;;;;
+Oral-Caries;dental caries;caries;;;;;;;;;;;;;;;;
+Oral-Tongue;dorsum of tongue;;;;;;;;;;;;;;;;;
